@@ -5,7 +5,10 @@ body{
 p{
     cursor: pointer;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
 
 .list-group-item{
     align-items: center;
@@ -15,4 +18,14 @@ p{
 
 .complete{
     text-decoration: line-through;
+}
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+  }
+
+@media (max-width: 576px) { 
+    body{
+        padding: 20px;
+    }
 }

@@ -54,12 +54,12 @@ export const TodoApp = () => {
             <h1>ToDoApp ({todos.length})</h1>
             <hr/>
             <div className='row'>
-                <div className='col-7'>
+                <div className='col-12 col-sm-7'>
                     <h4>ToDo's</h4>
                     <hr/>
                     <TodoList todos={todos} handleDelete={handleDelete} handleToggle={handleToggle}/>
                 </div>
-                <div className='col-5'>
+                <div className='col-12 col-sm-5'>
                     <TodoAdd handleAddTodo={handleAddTodo}/>
                 </div>
             </div>

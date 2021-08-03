@@ -7,7 +7,7 @@ export const TodoListItem = React.memo(({todo, index, handleDelete, handleToggle
         <li
             className='list-group-item' key={todo.id}
         >
-            <p className={todo.done?'complete':''}
+            <p className={todo.done?'complete overflow-ellipsis':'overflow-ellipsis'}
                 onClick={() => handleToggle(todo.id)} >{index+1}.{todo.desc}</p>
             <button className='btn btn-danger' onClick={() => handleDelete(todo.id)}>Delete</button>
         </li>
