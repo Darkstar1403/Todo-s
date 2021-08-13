@@ -20,3 +20,7 @@ TodoListItem.propTypes ={
     handleDelete: PropTypes.func.isRequired,
     handleToggle:PropTypes.func.isRequired
 }
+
+//si le aplicamos un memo a un componente es necesario definir displayName
+//Para que las pruebas unitarias detecten el componenteu
+TodoListItem.displayName='TodoListItem';

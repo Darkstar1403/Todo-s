@@ -18,3 +18,5 @@ TodoList.propTypes ={
     handleDelete: PropTypes.func.isRequired,
     handleToggle: PropTypes.func.isRequired
 }
+
+TodoList.displayName='TodoList';

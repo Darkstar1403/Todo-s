@@ -3,7 +3,7 @@ import { useForm } from '../../hooks/useForm';
 import PropTypes from 'prop-types';
 
 
-export const TodoAdd = ({handleAddTodo}) => {
+export const TodoAdd = React.memo(({handleAddTodo}) => {
 
     const [{description}, handleInputChange, reset] = useForm({
         description: ''
@@ -49,8 +49,10 @@ export const TodoAdd = ({handleAddTodo}) => {
             </form>
         </>
     )
-}
+})
 
 TodoAdd.propTypes ={
     handleAddTodo: PropTypes.func.isRequired
 }
+
+TodoAdd.displayName='TodoAdd';
